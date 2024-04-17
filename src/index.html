@@ -4,21 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Home work</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <load ="partials/header.html" />
+    <div class="section">
+      <form class="search-form" id="search-form">
+        <input
+          class="search-input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+        <button class="form-btn" type="submit">Search images</button>
+      </form>
+    </div>
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+    <div class="gallery"></div>
+    <button type="button" class="load-more-btn is-hidden">Load more</button>
+    <span class="loader is-hidden"></span>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
